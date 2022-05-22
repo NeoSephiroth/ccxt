@@ -59,7 +59,7 @@ async def main():
     exchange = ccxtpro.bitmex()
     await exchange.load_markets()
     duration = 1200000  # run 20 minutes = 1200000 milliseconds
-    symbol = 'BTC/USD'
+    symbol = 'XBTUSD'
     limit = 10
     loops = [
         watch_ticker('\033[35m', duration, exchange, symbol),              # magenta
